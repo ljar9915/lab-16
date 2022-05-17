@@ -1,0 +1,141 @@
+/* this changes all the elements in the page */
+* {
+  box-sizing: border-box;
+  text-transform: 
+}
+
+/* this changes the body of the document */
+
+body {
+  display: block;
+  background-image: url('landscape.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'trebuchet ms';
+  color: white;
+}
+
+ /* lavender = 226 199 255 */
+
+/* this changes the div which contains the form */
+.wrapper {
+  margin: 40px 0px;
+  text-align: center;
+  background-color: rgba(226,199,255,0.6);
+  border: 6px solid white;
+  border-radius: 50px;
+  width: 40%;
+  padding: 40px 0px;
+  padding-bottom: 20px;
+  top: 50px;
+  outline: #ffff, solid, 7px;
+  outline-offset: -15px;
+  overflow: hidden;
+}
+
+/*  this changes the width & margin of the div containing your form response + the return button */
+section_userform {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* this changes the size of the 'name' "email" & "phone" labels */
+.input_label {
+  font-size: 20px;
+}
+
+/* this changes the width, margin & font size of each the div's that hold the label & textbox. it also adds a drop shadow to the label text.*/
+.break {
+  display: block;
+  width: 100%;
+  margin: 28px 0;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+/* this changes the width, height, & padding of the textboxes & adds a black border around them. */
+.textbox {
+  width: 50%;
+  height: 1.8em;
+  box-sizing: content-box;
+  border: 1px solid black;
+  padding-left: 1em;
+  border-radius: 20px;
+}
+
+/* this adds a shadow to the h1 text. */
+h1 {
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.register {
+  font-size: 24px;
+}
+
+/* this changes the properties for the line under register */
+hr {
+  width: 60%;
+  border: 2px solid white;
+}
+
+.result_label {
+  
+}
+
+/* this changes the submit & return button */
+.button {
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* this describes what happens to the button when you hover your mouse over it */
+.button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  transform: scale(1.05);
+}
+
+/* this changes the text "registered info" & "thank you for registering" */
+.section_info {
+  text-align: center;
+  margin: 1em;
+}
+
+/* this adds a white border to the horizontal line */
+#line {
+  border-color: white;
+}
+
+/* this changes the width & color of the text which shows your answer to the form */
+.result {
+  width: 45%;
+  color: #fff;
+}
+
+#before {
+  opacity: 1;
+  display: block;
+}
+
+/* this hides the content that shows after you submit the form */
+#after {
+  display: none;
+  opacity: 0;
+}
+
+
+#input_username_button:focus #after {
+  display: block;
+  opacity: 1;
+}
+
+#input_username_button:focus #before {
+  display: hidden;
+  opacity: 0;
+  z-index:-1;
+}
